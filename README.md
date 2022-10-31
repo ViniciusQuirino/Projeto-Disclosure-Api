@@ -13,31 +13,33 @@ https://projeto-frontend-api.herokuapp.com
 POST /register
 
 Exemplo do body:
+
 ```json
 {
-	"name": "Teste",
-	"email": "teste@mail.com",
-	"password": "Teste123@",
-	"img": "teste.com",
-	"description": "A gente testa tudo",
-	"creationDate": "21/02/2000",
-	"openingHours": "9:00 - 16:00"
+  "name": "Teste",
+  "email": "teste@mail.com",
+  "password": "Teste123@",
+  "img": "teste.com",
+  "description": "A gente testa tudo",
+  "creationDate": "21/02/2000",
+  "openingHours": "9:00 - 16:00"
 }
 ```
 
 Exemplo da resposta:
+
 ```json
 {
-	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlYUBtYWlsLmNvbSIsImlhdCI6MTY2NzIzOTA0MiwiZXhwIjoxNjY3MjQyNjQyLCJzdWIiOiIyIn0.2Y11guBkCrwgI2oM9R5c7uJvBb-pCutQsXDNyX11e4I",
-	"user": {
-		"email": "testea@mail.com",
-		"name": "Teste",
-		"img": "teste.com",
-		"description": "A gente testa tudo",
-		"creationDate": "21/02/2000",
-		"openingHours": "9:00 - 16:00",
-		"id": 2
-	}
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlYUBtYWlsLmNvbSIsImlhdCI6MTY2NzIzOTA0MiwiZXhwIjoxNjY3MjQyNjQyLCJzdWIiOiIyIn0.2Y11guBkCrwgI2oM9R5c7uJvBb-pCutQsXDNyX11e4I",
+  "user": {
+    "email": "testea@mail.com",
+    "name": "Teste",
+    "img": "teste.com",
+    "description": "A gente testa tudo",
+    "creationDate": "21/02/2000",
+    "openingHours": "9:00 - 16:00",
+    "id": 2
+  }
 }
 ```
 
@@ -46,6 +48,7 @@ Exemplo da resposta:
 POST /login
 
 Exemplo do body:
+
 ```json
 {
   "email": "teste@mail.com",
@@ -54,18 +57,19 @@ Exemplo do body:
 ```
 
 Exemplo da resposta:
+
 ```json
 {
-	"accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQG1haWwuY29tIiwiaWF0IjoxNjY3MjM5MDA1LCJleHAiOjE2NjcyNDI2MDUsInN1YiI6IjEifQ.MNSHlXhmopXaV_32L9_nHQUEEYrGTzasdD8rSWu2nhU",
-	"user": {
-		"email": "teste@mail.com",
-		"name": "Teste",
-		"img": "teste.com",
-		"description": "A gente testa tudo",
-		"creationDate": "21/02/2000",
-		"openingHours": "9:00 - 16:00",
-		"id": 1
-	}
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQG1haWwuY29tIiwiaWF0IjoxNjY3MjM5MDA1LCJleHAiOjE2NjcyNDI2MDUsInN1YiI6IjEifQ.MNSHlXhmopXaV_32L9_nHQUEEYrGTzasdD8rSWu2nhU",
+  "user": {
+    "email": "teste@mail.com",
+    "name": "Teste",
+    "img": "teste.com",
+    "description": "A gente testa tudo",
+    "creationDate": "21/02/2000",
+    "openingHours": "9:00 - 16:00",
+    "id": 1
+  }
 }
 ```
 
@@ -76,6 +80,7 @@ Visualizar anúncios:
 GET /announcement
 
 Exemplo da resposta:
+
 ```json
 [
   {
@@ -95,9 +100,10 @@ Exemplo da resposta:
 
 Visualizar anúncio com o dono dele:
 
-GET /announcement?_expand=user
+GET /announcement?\_expand=user
 
 Exemplo da resposta:
+
 ```json
 [
   {
@@ -140,41 +146,43 @@ Visualizar usuário:
 GET /users/${id}
 
 Exemplo da resposta:
+
 ```json
 {
-	"email": "teste@mail.com",
-	"password": "$2a$10$e.SMXhb75yQonn4v2L9MaujLvPXAWCDt9SM23YID3BJtt30EmORnm",
-	"name": "Teste",
-	"img": "teste.com",
-	"description": "A gente testa tudo",
-	"creationDate": "21/02/2000",
-	"openingHours": "9:00 - 16:00",
-	"id": 1
+  "email": "teste@mail.com",
+  "password": "$2a$10$e.SMXhb75yQonn4v2L9MaujLvPXAWCDt9SM23YID3BJtt30EmORnm",
+  "name": "Teste",
+  "img": "teste.com",
+  "description": "A gente testa tudo",
+  "creationDate": "21/02/2000",
+  "openingHours": "9:00 - 16:00",
+  "id": 1
 }
 ```
 
 Visualizar usuário com os anúncios que ele criou:
 
-GET /users/1?_embed=announcement
+GET /users/1?\_embed=announcement
 
 Exemplo da resposta:
+
 ```json
 {
-	"email": "teste@mail.com",
-	"password": "$2a$10$e.SMXhb75yQonn4v2L9MaujLvPXAWCDt9SM23YID3BJtt30EmORnm",
-	"name": "Teste",
-	"img": "teste.com",
-	"description": "A gente testa tudo",
-	"creationDate": "21/02/2000",
-	"openingHours": "9:00 - 16:00",
-	"id": 1,
-	"announcement": [
-		{
-			"body": "Muito bom os testes",
-			"userId": 1,
-			"id": 1
-		}
-	]
+  "email": "teste@mail.com",
+  "password": "$2a$10$e.SMXhb75yQonn4v2L9MaujLvPXAWCDt9SM23YID3BJtt30EmORnm",
+  "name": "Teste",
+  "img": "teste.com",
+  "description": "A gente testa tudo",
+  "creationDate": "21/02/2000",
+  "openingHours": "9:00 - 16:00",
+  "id": 1,
+  "announcement": [
+    {
+      "body": "Muito bom os testes",
+      "userId": 1,
+      "id": 1
+    }
+  ]
 }
 ```
 
@@ -183,6 +191,7 @@ Exemplo da resposta:
 POST /announcement
 
 Exemplo do body:
+
 ```json
 {
   "body": "Muito bom os testes",
@@ -191,10 +200,11 @@ Exemplo do body:
 ```
 
 Exemplo da resposta:
+
 ```json
 {
-	"body": "Muito bom os testes",
-	"userId": 1,
-	"id": 2
+  "body": "Muito bom os testes",
+  "userId": 1,
+  "id": 2
 }
 ```
