@@ -162,7 +162,7 @@ Exemplo da resposta:
 
 Visualizar usuário com os anúncios que ele criou:
 
-GET /users/1?_embed=announcement
+GET /users/${id}?\_embed=announcement
 
 Exemplo da resposta:
 
