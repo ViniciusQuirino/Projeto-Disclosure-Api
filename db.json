@@ -1,36 +1,4 @@
 {
-  "users": [
-    {
-      "email": "teste@mail.com",
-      "password": "$2a$10$e.SMXhb75yQonn4v2L9MaujLvPXAWCDt9SM23YID3BJtt30EmORnm",
-      "name": "Teste",
-      "img": "teste.com",
-      "description": "A gente testa tudo",
-      "creationDate": "21/02/2000",
-      "openingHours": "9:00 - 16:00",
-      "id": 1
-    },
-    {
-      "email": "testea@mail.com",
-      "password": "$2a$10$xEXHVY0czZSP5EQp8Wivjes0VvKRAcv6tdlQv9nZikcTpbd0K232G",
-      "name": "Teste",
-      "img": "teste.com",
-      "description": "A gente testa tudo",
-      "creationDate": "21/02/2000",
-      "openingHours": "9:00 - 16:00",
-      "id": 2
-    }
-  ],
-  "announcement": [
-    {
-      "body": "Muito bom os testes",
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "body": "Muito bom os testes",
-      "userId": 1,
-      "id": 2
-    }
-  ]
+  "users": [],
+  "announcement": []
 }
