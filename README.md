@@ -162,7 +162,7 @@ Exemplo da resposta:
 
 Visualizar usuário com os anúncios que ele criou:
 
-GET /users/1?\_embed=announcement
+GET /users/1?_embed=announcement
 
 Exemplo da resposta:
 
@@ -195,6 +195,7 @@ Exemplo do body:
 ```json
 {
   "body": "Muito bom os testes",
+  "type": "Tecnologia",
   "userId": 1
 }
 ```
@@ -204,6 +205,7 @@ Exemplo da resposta:
 ```json
 {
   "body": "Muito bom os testes",
+  "type": "Tecnologia",
   "userId": 1,
   "id": 2
 }
