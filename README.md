@@ -2,9 +2,9 @@
 
 Esse é o repositório com a base de JSON-Server + JSON-Server-Auth já configurada, feita para ser usada no desenvolvimento das API's nos Projetos Front-end.
 
-## Endpoints
+## URL
 
-Assim como a documentação do JSON-Server-Auth traz (https://www.npmjs.com/package/json-server-auth), existem 3 endpoints que podem ser utilizados para cadastro e 2 endpoints que podem ser usados para login.
+https://projeto-frontend-api.herokuapp.com
 
 ### Rotas que não precisam de autorização
 
